@@ -1,0 +1,27 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "This is a react application",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TanujTanmaya/namaste-react01.git"
+  },
+  "keywords": [],
+  "author": "Tanuj Pattanaik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TanujTanmaya/namaste-react01/issues"
+  },
+  "homepage": "https://github.com/TanujTanmaya/namaste-react01#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
