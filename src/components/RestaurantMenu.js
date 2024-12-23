@@ -32,6 +32,7 @@ const RestaurantMenu = () => {
   //       ?.card?.itemCards
   //   );
   // };
+
   console.log(
     resInfo?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards
   );
@@ -63,7 +64,7 @@ const RestaurantMenu = () => {
             data={category}
             key={index}
             showItems={index === showIndex ? true : false}
-            setShowIndex={()=> setShowIndex(index)}
+            setShowIndex={() => setShowIndex(index)}
           />
         ))
       ) : (

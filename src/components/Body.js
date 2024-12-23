@@ -1,5 +1,5 @@
 import RestaurantCard, { withOpenLabel } from "./RestaurantCard";
-import { useEffect, useState,useContext } from "react";
+import { useEffect, useState, useContext } from "react";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import UserContext from "../utils/UserContext";
@@ -36,8 +36,7 @@ const Body = () => {
     );
   };
 
-
-  const {loggedInUser,setUserName}=useContext(UserContext)
+  const { loggedInUser, setUserName } = useContext(UserContext);
 
   return listOfRestaurant?.length === 0 ? (
     <Shimmer />
@@ -88,7 +87,12 @@ const Body = () => {
 
         <div className="search m-4 p-4 flex items-center">
           <label>User-Name</label>
-          <input type="text" className="border border-solid border-black" value={loggedInUser}  onChange={(e)=>setUserName(e.target.value)}/>
+          <input
+            type="text"
+            className="border border-solid border-black"
+            value={loggedInUser}
+            onChange={(e) => setUserName(e.target.value)}
+          />
         </div>
       </div>
       <div className="flex flex-wrap">
